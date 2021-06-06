@@ -1,0 +1,17 @@
+name: 'my first container'
+author: 'shyam'
+inputs: 
+   myInput: 
+      description: 'greeting to use'
+      required: true
+      default: 'awssome'
+      
+   outputs:
+      myOutput:
+        description: 'total memory'
+        
+   runs:
+      using: 'docker'
+      image: 'Dockerfile'
+      
+      
